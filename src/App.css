@@ -1,38 +1,78 @@
-.App {
+
+
+.header {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.main{
+  border-top: 2px solid skyblue;
+  display: flex;
+  justify-content: space-between;
+}
+.main__content{
+  flex: 1 0 70%;
+}
+.main__results{
+  flex: 0 1 30%;
+  border-left: 2px solid skyblue;
+
+}
+.row{
+  display: flex;
+}
+.row:not(:last-of-type){
+  border-bottom: 2px solid skyblue;
+}
+.title-box{
+  flex: 0 0 12rem;
+  border-right: 2px solid skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row__content{
+  padding: 1rem 4rem;
+  display: grid;
+  row-gap: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row__list{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+}
+.row__sub-list{
+  margin-top: 1rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.list__title{
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+.btn{
+    background-color: white;
+    padding: .5rem 2rem;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4rem;
+    border: 1px solid #000;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:not(:last-of-type){
+  margin-right: 1rem;
 }
