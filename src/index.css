@@ -31,5 +31,13 @@
   h4{
     @apply text-h4
   }
-  
+ 
+}
+@layer components{
+  .btn-link{
+    @apply
+  }
+  .btn-input{
+    @apply w-24 ml-1 px-1 placeholder:text-gray-700 border
+  }
 }
