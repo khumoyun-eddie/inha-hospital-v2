@@ -3,62 +3,26 @@ import { Outlet, Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
-      <header className='header'>
-        <h2 className='header__title'>Organ</h2>
-        <div className='navigation'>
+      <header className='flex items-center'>
+        <h2 className='text-center basis-48'>Organ</h2>
+        <div className='space-x-2'>
           <Link
-            className='navigation__link btn btn--link'
-            to='/esophagus'
-          >
-            Esophagus
-          </Link>
-          <Link
-            className='navigation__link btn btn--link'
-            to='/stomach'
+            className=''
+            to='/organs/stomach'
           >
             stomach
           </Link>
+
           <Link
-            className='navigation__link btn btn--link'
-            to='/duodenum'
-          >
-            duodenum
-          </Link>
-          <Link
-            className='navigation__link btn btn--link'
-            to='/small bowel'
-          >
-            small bowel
-          </Link>
-          <Link
-            className='navigation__link btn btn--link'
-            to='/colon'
-          >
-            colon
-          </Link>
-          <Link
-            className='navigation__link btn btn--link'
-            to='/appendix'
-          >
-            appendix
-          </Link>
-          <Link
-            className='navigation__link btn btn--link'
-            to='/rectum'
+            className=''
+            to='/organs/rectum'
           >
             rectum
           </Link>
-          <Link
-            className='navigation__link btn btn--link'
-            to='/anus'
-          >
-            anus
-          </Link>
         </div>
       </header>
-    
-        
-        <Outlet />
+
+      <Outlet />
     </>
   );
 };

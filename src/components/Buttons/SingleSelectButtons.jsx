@@ -20,7 +20,7 @@ const SingleSelectButtons = ({ btn, nameFor,handleSelect }) => {
       />
       <label
         htmlFor={btn}
-        className='border py-2 px-4 hover:bg-gray-200 hover:text-white peer-checked:bg-red'
+        className='px-4 py-2 border hover:bg-gray-200 hover:text-white peer-checked:bg-red'
       >
         {btn}
       </label>

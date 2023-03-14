@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Main from "./routes/Main";
+import Organs from "./routes/Organs";
 import Navigation from "./routes/Navigation";
 
 function App() {
   return (
-    <div className='container-xl mx-auto mt-4 bg-white'>
+    <div className='mx-auto mt-4 bg-white container-xl'>
       <Routes>
         <Route path='/' element={<Navigation />}>
-          <Route index element={<Main/>}/>
+          <Route path="organs/*" element={<Organs/>}/>
         </Route>
       </Routes>
     </div>
